@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a09ed3fe-4cb8-4bfb-82ef-207e7ed18d0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Node_Demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Node_Demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,7 +18,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
+            <state relative-caret-position="500">
               <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
             </state>
           </provider>
@@ -28,7 +27,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="fef0fe6e-3469-4787-ba0d-8bd23d8737b8" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -38,11 +41,26 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="824" />
-    <option name="y" value="162" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="298" />
+    <option name="y" value="88" />
     <option name="width" value="1517" />
     <option name="height" value="1061" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -71,7 +89,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="standardjs.codestyle.accepted" value="true" />
   </component>
   <component name="RunDashboard">
@@ -87,7 +105,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\liyou\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,7 +115,11 @@
       <option name="presentableId" value="Default" />
       <updated>1552813588432</updated>
       <workItem from="1552813590728" duration="4365000" />
-      <workItem from="1552818238000" duration="543000" />
+      <workItem from="1552818238000" duration="1048000" />
+      <workItem from="1552910477525" duration="799000" />
+      <workItem from="1552911377021" duration="230000" />
+      <workItem from="1552911621476" duration="26000" />
+      <workItem from="1552915978057" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="_.sortBy()">
       <created>1552818535508</created>
@@ -110,11 +132,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4908000" />
+    <option name="totallyTimeSpent" value="6526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="824" y="162" width="1517" height="1061" extended-state="0" />
-    <editor active="true" />
+    <frame x="298" y="88" width="1517" height="1061" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18796484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -130,9 +151,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3279396" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,12 +170,10 @@
     <entry file="file://$USER_HOME$/WebstormProjects/untitled/demo.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="500">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
