@@ -1,5 +1,11 @@
 //This is a fucking node.js demo. XD
-let  _ =  require('lodash');
+let  _ =  require('lodash'),
+    redis = require('redis'),
+    RDS_PORT = 6379,
+    RDS_HOST = '127.0.0.1',
+    RDS_OPTS = {},
+    client = redis.createClient(RDS_PORT, RDS_HOST, RDS_OPTS);
+
 
 let obj = {
     "fqf":{
@@ -25,8 +31,28 @@ let [tqRArr,tqBArr,ttRArr,ttBArr] = [
 	[1,2,3,4,5,6,7,8,9,10,11,12],
 ];
 
+client.get("CP", function(err, reply){
 
-for(let i = 1;i<=100;i++){
+    let oldArr = reply.split(",|");
+
+    let [res,unkey] = func();
+
+    if(!oldArr.includes(unkey.substring(0,unkey.length-2))){
+
+        client.set("CP",reply+unkey,redis.print);
+
+        console.log(res);
+
+        return res; 
+    }
+
+    });
+
+
+
+let func = function(){
+
+    for(let i = 1;i<=100;i++){
     tqRf.push(_.sampleSize(tqRArr.sort(() => Math.random() - 0.5),7));
     tqBf.push(_.sampleSize(tqBArr.sort(() => Math.random() - 0.5),1));
     tqR.push(_.sampleSize(tqRArr.sort(() => Math.random() - 0.5),6));
@@ -51,5 +77,10 @@ obj["fq"]["b"] = qB;
 obj["tt"]["r"] = tR;
 obj["tt"]["b"] = tB;
 
-console.log(obj);
+let uniqueValue = qRf.concat(qBf).concat(qR).concat(qB).concat(tR).concat(tB).concat(['|']).join();
+
+return [obj,uniqueValue];
+
+}
+
 
