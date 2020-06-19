@@ -27,12 +27,12 @@ let [tqRArr,tqBArr,ttRArr,ttBArr] = [
 
 
 for(let i = 1;i<=100;i++){
-    tqRf.push(_.sampleSize(tqRArr,7));
-    tqBf.push(_.sampleSize(tqBArr,1));
-    tqR.push(_.sampleSize(tqRArr,6));
-    tqB.push(_.sampleSize(tqBArr,1));
-    ttR.push(_.sampleSize(ttRArr,5));
-    ttB.push(_.sampleSize(ttBArr,2));
+    tqRf.push(_.sampleSize(tqRArr.sort(() => Math.random() - 0.5),7));
+    tqBf.push(_.sampleSize(tqBArr.sort(() => Math.random() - 0.5),1));
+    tqR.push(_.sampleSize(tqRArr.sort(() => Math.random() - 0.5),6));
+    tqB.push(_.sampleSize(tqBArr.sort(() => Math.random() - 0.5),1));
+    ttR.push(_.sampleSize(ttRArr.sort(() => Math.random() - 0.5),5));
+    ttB.push(_.sampleSize(ttBArr.sort(() => Math.random() - 0.5),2));
 }
 
 let [qRf,qBf,qR,qB,tR,tB] = [
