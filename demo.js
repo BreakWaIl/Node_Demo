@@ -51,5 +51,5 @@ obj["fq"]["b"] = qB;
 obj["tt"]["r"] = tR;
 obj["tt"]["b"] = tB;
 
-console.log(obj);
+console.log(JSON.stringify(obj));
 
