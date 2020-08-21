@@ -22,7 +22,9 @@ console.log(obj.fqf.r);
 
 let msgStr = "双色球小复式:红球-"+ obj.fqf.r+"|"+ "篮球-"+obj.fqf.b+"|"+"双色球单式:红球-"+ obj.fq.r+"|"+"篮球-"+obj.fq.b+"|"+"大乐透单式:红球-"+ obj.tt.r +"|"+"篮球-"+obj.tt.b;
 
-let msgTitle = "每日幸运球"+"|"+msgStr;
+//长度有限制 < 100
+
+let msgTitle = "每日幸运球";
 
 console.log(msgStr,msgTitle);
 
